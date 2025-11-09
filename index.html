@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eddie's Personal Website</title>
 
-  <!--  CSS -->
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url("bg.jpg") no-repeat center/cover fixed;
+      background: url("edeweb/bg.jpg") no-repeat center/cover fixed;
       color: var(--text);
       transition: 0.3s;
       scroll-behavior: smooth;
@@ -159,7 +158,7 @@
 
   <main id="homePage">
     <section id="home">
-      <img src="eddie.jpg" alt="Eddie" class="profile" />
+      <img src="edeweb/eddie.jpg" alt="Eddie" class="profile" />
       <h1 id="typingText"></h1>
       <p>I'm Eddie John G. Hernandez</p>
       <p>Please scroll down to know something about me.</p>
@@ -178,18 +177,18 @@
 
       <h2>My Skills</h2>
       <div class="flex">
-        <div class="card reveal"><img src="eg.jpg"><p>Playing Guitar</p></div>
-        <div class="card reveal"><img src="undefined.jpg"><p>Solving Rubik's Cube</p></div>
-        <div class="card reveal"><img src="Video editor app icon to make your phone aesthetic….jpg"><p>Editing Short Videos</p></div>
+        <div class="card reveal"><img src="edeweb/eg.jpg"><p>Playing Guitar</p></div>
+        <div class="card reveal"><img src="edeweb/undefined.jpg"><p>Solving Rubik's Cube</p></div>
+        <div class="card reveal"><img src="edeweb/Video editor app icon to make your phone aesthetic….jpg"><p>Editing Short Videos</p></div>
       </div>
     </section>
 
     <section id="projects" class="reveal">
       <h2>Future Projects</h2>
       <div class="flex">
-        <div class="card reveal"><img src="undefined (1).jpg"><p>90 Days Planner</p></div>
-        <div class="card reveal"><img src="Rue du Tee Shirt - Boutique de t-shirts originaux_.jpg"><p>Guitar Chords Scanner</p></div>
-        <div class="card reveal"><img src="undefined (2).jpg"><p>Aim Bot Practice</p></div>
+        <div class="card reveal"><img src="edeweb/undefined (1).jpg"><p>90 Days Planner</p></div>
+        <div class="card reveal"><img src="edeweb/Rue du Tee Shirt - Boutique de t-shirts originaux_.jpg"><p>Guitar Chords Scanner</p></div>
+        <div class="card reveal"><img src="edeweb/undefined (2).jpg"><p>Aim Bot Practice</p></div>
       </div>
     </section>
   </main>
@@ -199,19 +198,18 @@
       <h2>Contact Me</h2>
       <div class="social-links">
         <a href="https://www.tiktok.com/@h4c3rs?_r=1&_t=ZS-91EQvhHMhXg" target="_blank">
-          <img src="download.jpg" alt="TikTok"><p>TikTok</p>
+          <img src="edeweb/download.jpg" alt="TikTok"><p>TikTok</p>
         </a>
         <a href="https://www.facebook.com/share/17Zd9N1ghx/" target="_blank">
-          <img src="download (1).jpg" alt="Facebook"><p>Facebook</p>
+          <img src="edeweb/download (1).jpg" alt="Facebook"><p>Facebook</p>
         </a>
         <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=y8whmjx" target="_blank">
-          <img src="download (2).jpg" alt="Instagram"><p>Instagram</p>
+          <img src="edeweb/download (2).jpg" alt="Instagram"><p>Instagram</p>
         </a>
       </div>
     </section>
   </main>
 
-  <!--  JavaScript -->
   <script>
     const body = document.body;
     const lightBtn = document.getElementById("lightBtn");
@@ -237,7 +235,6 @@
       contactBtn.classList.remove("hide");
     };
 
-    // Typing Animation
     const typingText = document.getElementById("typingText");
     const text = "Welcome";
     let i = 0;
@@ -248,7 +245,6 @@
       }
     })();
 
-    // Scroll Reveal
     window.addEventListener("scroll", () => {
       document.querySelectorAll(".reveal").forEach((el, i) => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100)
